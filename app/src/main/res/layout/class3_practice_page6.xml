@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dip" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dip">
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="12"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp" />
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/editText"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            app:bootstrapSize="md"
+            app:bootstrapBrand="info"
+            app:roundedCorners="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_toRightOf="@+id/text"
+            android:layout_alignBottom="@+id/text"/>
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            style="@style/wrapping_button"
+            android:id="@+id/submit"
+            android:text="Submit"
+            app:bootstrapBrand="success"
+            app:roundedCorners="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/editText"
+            android:layout_alignBottom="@+id/editText"/>
+    </RelativeLayout>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/show" />
+
+</LinearLayout>
